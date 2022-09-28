@@ -3,11 +3,6 @@
   "name": "test",
   "version": "0.0.1",
   "generators": {
-    "test": {
-      "factory": "./src/generators/test/generator",
-      "schema": "./src/generators/test/schema.json",
-      "description": "test generator"
-    },
     "libs": {
       "factory": "./src/generators/libs/generator",
       "schema": "./src/generators/libs/schema.json",
