@@ -4,7 +4,7 @@ import { Tree, readProjectConfiguration } from '@nrwl/devkit';
 import generator from './generator';
 import { LibsGeneratorSchema } from './schema';
 
-describe('convert-buildable-to-publishable generator', () => {
+describe('libs generator', () => {
   let appTree: Tree;
   const options: LibsGeneratorSchema = { name: 'test' };
 

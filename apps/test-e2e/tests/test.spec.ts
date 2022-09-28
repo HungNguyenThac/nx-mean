@@ -14,7 +14,10 @@ describe('test e2e', () => {
   // on a unique project in the workspace, such that they
   // are not dependant on one another.
   beforeAll(() => {
-    ensureNxProject('@nx-mean/test', 'dist/libs/test');
+    ensureNxProject(
+      '@nx-mean/test',
+      'dist/convert-buildable-to-publishable/test'
+    );
   });
 
   afterAll(() => {
@@ -45,7 +48,10 @@ describe('test e2e', () => {
   describe('--tags', () => {
     it('should add tags to the project', async () => {
       const projectName = uniq('test');
-      ensureNxProject('@nx-mean/test', 'dist/libs/test');
+      ensureNxProject(
+        '@nx-mean/test',
+        'dist/convert-buildable-to-publishable/test'
+      );
       await runNxCommandAsync(
         `generate @nx-mean/test:test ${projectName} --tags e2etag,e2ePackage`
       );
