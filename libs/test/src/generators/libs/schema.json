@@ -16,7 +16,7 @@
     },
     "directory": {
       "type": "string",
-      "description": "A directory where the project is placed",
+      "description": "Tạo thư mục nơi chứa lib, nếu chưa có sẽ tạo mới, có rồi sẽ sử dụng lại",
       "alias": "d",
       "$default": {
         "$source": "argv",

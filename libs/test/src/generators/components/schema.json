@@ -16,7 +16,7 @@
     },
     "path": {
       "type": "string",
-      "description": "Đường dẫn tới thư mục cần tạo component",
+      "description": "Đường dẫn tới thư mục cần tạo component, nếu không có, mặc định sẽ tạo trong app component của project trong apps. Thêm đường dẫn cho biết sẽ tạo component ở đâu",
       "alias": "pa",
       "$default": {
         "$source": "argv",
