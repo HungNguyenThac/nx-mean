@@ -1,5 +1,4 @@
 export interface LibsGeneratorSchema {
-    name: string;
-    tags?: string;
-    directory?: string;
+  name: string;
+  directory?: string;
 }

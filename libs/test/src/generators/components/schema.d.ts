@@ -1,3 +1,5 @@
 export interface ComponentsGeneratorSchema {
-    name: string;
+  name: string;
+  path: string;
+  project?: string;
 }
