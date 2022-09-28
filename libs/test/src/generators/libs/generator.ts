@@ -8,13 +8,15 @@ import {
 export default async function (tree: Tree) {
   const projects = getProjects(tree);
 
+
   for (const [projectName, projectConfiguration] of projects.entries()) {
     if (
       projectConfiguration.projectType === 'application' ||
       !projectConfiguration.targets['build'] ||
       projectConfiguration.targets['build'].executor ===
-        '@nrwl/angular:ng-packagr-lite'
+        '@nrwl/angular:package'
     ) {
+
       continue;
     }
 
@@ -24,7 +26,7 @@ export default async function (tree: Tree) {
         ...projectConfiguration.targets,
         build: {
           ...projectConfiguration.targets['build'],
-          executor: '@nrwl/angular:package',
+          executor:  '@nrwl/angular:package',
         },
       },
     });
