@@ -25,5 +25,5 @@
       "alias": "pj"
     }
   },
-  "required": ["name", "path"]
+  "required": ["name"]
 }
