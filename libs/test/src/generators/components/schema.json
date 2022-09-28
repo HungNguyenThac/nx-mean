@@ -4,6 +4,26 @@
   "$id": "Components",
   "title": "",
   "type": "object",
-  "properties": {},
-  "required": ["name"]
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "path": {
+      "type": "string",
+      "description": "đường dẫn đến thư mục cần tạo component",
+      "alias": "pa"
+    },
+    "project": {
+      "type": "string",
+      "description": "project cần tạo component",
+      "alias": "pj"
+    }
+  },
+  "required": ["name", "path"]
 }
