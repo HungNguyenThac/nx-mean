@@ -8,6 +8,11 @@
       "schema": "./src/generators/libs/schema.json",
       "description": "libs generator"
     },
+    "convert": {
+      "factory": "./src/generators/convert-buildable-to-publishable/generator",
+      "schema": "./src/generators/convert-buildable-to-publishable/schema.json",
+      "description": "convert-buildable-to-publishable generator"
+    },
     "components": {
       "factory": "./src/generators/components/generator",
       "schema": "./src/generators/components/schema.json",
