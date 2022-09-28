@@ -17,7 +17,11 @@
     "path": {
       "type": "string",
       "description": "đường dẫn đến thư mục cần tạo component",
-      "alias": "pa"
+      "alias": "pa",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
     },
     "project": {
       "type": "string",
@@ -25,5 +29,5 @@
       "alias": "pj"
     }
   },
-  "required": ["name"]
+  "required": ["name", "path"]
 }
