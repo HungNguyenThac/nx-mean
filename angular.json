@@ -2,10 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "999-888-777-oke1": "libs/999/888/777/oke1",
-    "999-888-oke2": "libs/999/888/oke2",
     "cart": "libs/cart",
-    "oke": "libs/oke",
     "product": "libs/product",
     "project": "apps/project",
     "project-e2e": "apps/project-e2e",

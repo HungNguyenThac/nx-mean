@@ -15,10 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-mean/999/888/777/oke1": ["libs/999/888/777/oke1/src/index.ts"],
-      "@nx-mean/999/888/oke2": ["libs/999/888/oke2/src/index.ts"],
       "@nx-mean/cart": ["libs/cart/src/index.ts"],
-      "@nx-mean/oke": ["libs/oke/src/index.ts"],
       "@nx-mean/product": ["libs/product/src/index.ts"],
       "@nx-mean/test": ["libs/test/src/index.ts"]
     }
